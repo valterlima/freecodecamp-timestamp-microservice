@@ -14,7 +14,7 @@ exports.parse = function(param){
 	
 	var response = {
 		"unix": unix,
-		"natural": natural
+		"natural": (!unix) ? null : natural
 	}
 
 	return response;
