@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/:param', function(req, res, next) {
 	var param = req.params.param;	
-	res.send(timeController.parse(param));
+	res.render('index', timeController.parse(param));
 });
 
 module.exports = router;
